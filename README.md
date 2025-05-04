@@ -23,7 +23,7 @@ To develop a reproducible workflow to:
 ├── predictor.py                      # Script for loading/scoring new transactions
 ├── xgb_illicit_model.pkl             # Trained XGBoost model
 ├── scaler.pkl                        # RobustScaler used on selected features
-├── xgb_feature_list.json            # Ordered feature list for prediction
+├── xgb_feature_list.json             # Ordered feature list for prediction
 ├── new_data.csv                      # Example input for prediction
 └── README.md                         # This file
 ```
@@ -44,14 +44,6 @@ pip install pandas numpy networkx shap xgboost scikit-learn matplotlib joblib
 1. Open `FULL_ANALYSIS.ipynb`
 2. Run all cells sequentially
 
-### 🔁 Predict New Transactions
-1. Save new transaction data in `new_data.csv`
-2. Run:
-```bash
-python predictor.py
-```
-3. Output will include prediction, risk score, risk level, and top explanatory features
-
 ---
 
 ## 📊 Outputs
@@ -66,13 +58,6 @@ python predictor.py
 
 ---
 
-## 🔎 Model Explainability
-- SHAP summary plots
-- Top 5 influential features per node
-- Justification for risk scoring per prediction
-
----
-
 ## 📈 Tools Used
 - Python (pandas, sklearn, xgboost, shap)
 - NetworkX (graph metrics)
@@ -81,16 +66,8 @@ python predictor.py
 ---
 
 ## ✍️ Author
-**[Tu Nombre Aquí]**  
+Ivan Anzaldo 
 Data Science & AML Specialist  
-[LinkedIn profile / GitHub link opcional]
+[https://www.linkedin.com/in/ivan-anzaldo-baca/]
 
 ---
-
-## 📬 Contact
-If you have any questions or suggestions, feel free to open an issue or reach out!
-
----
-
-## 📚 Acknowledgments
-Elliptic dataset provided under license for research purposes. Full metadata and labels available on [Kaggle](https://www.kaggle.com/datasets/ellipticco/elliptic-data-set).
